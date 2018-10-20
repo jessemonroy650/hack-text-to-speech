@@ -8,7 +8,7 @@ var app = {
             function () { navigator.app.exitApp(); },
             false);
         document.getElementById('playOther').addEventListener(app.targetEvent,
-            function () { alert("play other works"); },
+            function () { txt2SpeechPlugin.talk(2); },
             false);
     },
     //
@@ -31,12 +31,7 @@ var app = {
         //
         //
         //
-        //txt2SpeechPlugin.talk();
-        TTS.speak('hello, world!', function () {
-            alert('success');
-        }, function (reason) {
-            alert(reason);
-        });
+        txt2SpeechPlugin.talk(1);
 
     }
 }
