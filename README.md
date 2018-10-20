@@ -8,6 +8,4 @@ In addition, this example app uses `cordova-plugin-device`.
 
 * https://www.npmjs.com/package/cordova-plugin-device
 
-
-
-
+This example may be removed with notice.
