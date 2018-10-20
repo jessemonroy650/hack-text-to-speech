@@ -18,6 +18,6 @@
 
         <!-- PLUGINS PLUGINS -->
         <plugin name="cordova-plugin-device" spec="~2.0.2" />
-        <plugin name="cordova-plugin-bst-tts" spec="~1.0.2" />
+        <plugin name="cordova-plugin-texttospeech" spec="~0.1.1" />
 
     </widget>

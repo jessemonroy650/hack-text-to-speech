@@ -3,7 +3,7 @@ var txt2SpeechPlugin = {
 
     talk : function (text) {
         document.getElementById('status').innerHTML = 'talk() called';
-        .speak('hello, world!', function () {
+        TTS.speak('hello, world!', function () {
             alert('success');
         }, function (reason) {
             alert(reason);
