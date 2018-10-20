@@ -31,6 +31,12 @@ var app = {
         //
         //
         //
-        txt2SpeechPlugin.talk();
+        //txt2SpeechPlugin.talk();
+        .speak('hello, world!', function () {
+            alert('success');
+        }, function (reason) {
+            alert(reason);
+        });
+
     }
 }
