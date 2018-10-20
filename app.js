@@ -1,7 +1,11 @@
 var app = {
-    version : '0.8.0',
+    version : '0.9.0',
     targetEvent : 'click',
 
+    //
+    input2Speech : function () {
+
+    },
     //
     hook : function () {
         document.getElementById('exitApp').addEventListener(app.targetEvent,
@@ -9,6 +13,10 @@ var app = {
             false);
         document.getElementById('playOther').addEventListener(app.targetEvent,
             function () { txt2SpeechPlugin.talk(2); },
+            false);
+        //
+        document.getElementById('formText').addEventListener('submit',
+            function () { txt2SpeechPlugin.talk(document.getElementById('theText').value);  },
             false);
     },
     //

@@ -1,5 +1,5 @@
 var txt2SpeechPlugin = {
-    version : '0.7.0',
+    version : '0.9.0',
 
     talk : function (theText) {
         //
@@ -23,7 +23,7 @@ var txt2SpeechPlugin = {
         } else {
             TTS.speak({
                 text: theText,
-                locale: 'en-GB',
+                locale: 'en-US',
                 rate: 0.65
             },
             function () {},
