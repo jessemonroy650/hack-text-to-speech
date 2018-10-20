@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Hack Text to Speech plugin</title>
+    <meta http-equiv="Content-Security-Policy" 
+             content="default-src *;  media-src *;
+                      style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="txt2Speech.js"></script>
+</head>
+<body>
+    <div id=header>
+        <img id=icon src=favicon-48x48.png>
+        Hack Text to Speech plugin
+        <button id=exitApp>Exit</button>
+    </div>
+    <div style="clear:both;">
+    <button id=playOther>Play Other</button>
+    </div>
+    <div style="clear:both;">
+    </div>
+
+    <h3>App Version v<span id=appVersion></span></h3>
+
+    <div>
+        <b>Status:</b> <span id=status>status unknown</span><br>
+    </div>
+
+    <div style="margin:0.3em;">
+    <input id=theText name=theText size=30 type=text>
+    </div>
+
+    <p />
+    <b>navigator.appCodeName:</b> <span id=navCodeName>false</span><br>
+    <b>navigator.appName:</b> <span id=navName>false</span><br>
+    <b>navigator.appVersion:</b> <span id=navVersion>false</span><br>
+    <b>navigator.platform:</b>  <span id=navPlatform>false</span><br>
+    <b>isCordovaApp:</b> <span id=isCordovaApp>false</span><br>
+
+    <div id=copyright>Created by Jesus Monroy, Jr. &copy; 2018</div>
+</body>
+    <script type="text/javascript">
+    // The 'DOMContentLoaded' event fires before the 'deviceready'
+    document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
+    // Wait for PhoneGap to load
+    document.addEventListener('deviceready', app.onDeviceReady, false);
+    </script>
+</html>

@@ -1,0 +1,7 @@
+body {margin:0px;font-size:large;}
+#header {margin:0;padding:0;text-align:center;line-height:2em;border:1px solid black;}   
+#icon {float:left;}
+#exitApp {margin:0.1em;float:right;font-size:0.9em;}
+#playOther {float:left;font-size:0.9em;margin:0.5em;}
+#playBuddy {float:right;font-size:0.9em;margin:0.5em;}
+#copyright {font-style:italic;font-size:small;}
