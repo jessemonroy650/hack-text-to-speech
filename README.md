@@ -1,14 +1,12 @@
 # PGB-Simplified-Media
 
-A *Phonegap Build* simplified example for the Cordova 'Media' plugin using `cli-6.0.0` which uses minimal CSS & Javascript.
+A *Phonegap Build* simple example for `cordova-plugin-bst-tts` plugin using `cli-6.0.0`, and minimal CSS & Javascript.
 
-This example app uses `cordova-plugin-bst-tts`. The plugins `cordova-plugin-file` and `cordova-plugin-compat` are automatically loaded by *Phonegap Build*.
+* https://www.npmjs.com/package/cordova-plugin-texttospeech
 
-* https://www.npmjs.com/package/cordova-plugin-bst-tts
+In addition, this example app uses `cordova-plugin-device`.
 
-
-* https://www.npmjs.com/package/cordova-plugin-file
-* https://www.npmjs.com/package/cordova-plugin-compat (deprecated)
+* https://www.npmjs.com/package/cordova-plugin-device
 
 
 
