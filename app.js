@@ -60,5 +60,7 @@ var app = {
         //
         txt2SpeechPlugin.talk(1);
         app.inputFocus();
+        // I could reset the function pointer directly, but this indirection is visually easier to understand.
+        txt2SpeechPlugin.refocus = app.inputFocus;
     }
 }

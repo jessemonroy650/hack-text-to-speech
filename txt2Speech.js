@@ -1,8 +1,14 @@
 var txt2SpeechPlugin = {
     version : '1.0.0',
+    refocus : '',
 
+
+    setRefocus : function () {
+        txt2SpeechPlugin.refocus();
+    },
     gotit : function () {
         document.getElementById('status').innerHTML = 'talk() DONE.';
+        txt2SpeechPlugin.setRefocus();
     },
     err   : function (reason) {
         document.getElementById('status').innerHTML = reason;
