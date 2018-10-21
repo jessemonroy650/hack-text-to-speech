@@ -12,6 +12,14 @@ var app = {
             txt2SpeechPlugin.talk(x);
         }
     },
+    // clear the input field
+    inputClear : function () {
+        document.getElementById('theText').value = "";
+    },
+    // set the input focus
+    inputFocus : function () {
+        document.getElementById('theText').focus();
+    },
     //
     hook : function () {
         //console.log("called hook() ");
@@ -20,6 +28,9 @@ var app = {
             false);
         document.getElementById('playOther').addEventListener(app.targetEvent,
             function () { txt2SpeechPlugin.talk(2); },
+            false);
+        document.getElementById('clearText').addEventListener(app.targetEvent,
+            app.inputClear,
             false);
         //
         document.getElementById('theText').addEventListener('keyup',
@@ -41,13 +52,13 @@ var app = {
     //
     onDeviceReady : function () {
         app.targetEvent = 'touchend';
-        document.getElementById('status').innerHTML = 'is Cordova';
         // - https://videlais.com/2014/08/21/lessons-learned-from-detecting-apache-cordova/
         document.getElementById('isCordovaApp').innerHTML = (typeof window.cordova !== "undefined");
+        document.getElementById('status').innerHTML = 'is Cordova';
         //
         //
         //
         txt2SpeechPlugin.talk(1);
-
+        app.inputFocus();
     }
 }

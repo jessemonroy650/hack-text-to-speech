@@ -22,7 +22,7 @@ var txt2SpeechPlugin = {
             TTS.speak({
                 text: theText,
                 locale: 'en-US',
-                rate: 0.65
+                rate: 0.50
             }, txt2SpeechPlugin.gotit, txt2SpeechPlugin.err);
         }
         document.getElementById('status').innerHTML = 'talk() => <b>waiting</b>';
