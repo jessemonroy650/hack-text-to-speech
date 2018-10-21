@@ -1,6 +1,6 @@
 # PGB Simplified Text to Speech
 
-A *Phonegap Build* simple example for `cordova-plugin-texttospeech` plugin using `cli-6.0.0`, and minimal CSS & Javascript. It uses the Gooogle **Text to Speech** cloud service.
+A *Phonegap Build* simple example for `cordova-plugin-texttospeech` plugin using `cli-6.0.0`, and minimal CSS & Javascript. It uses the Gooogle *Text to Speech* cloud service.
 
 * https://www.npmjs.com/package/cordova-plugin-texttospeech
 
@@ -12,9 +12,10 @@ This example uses keyboard events to trap the input field.
 
 * https://www.w3schools.com/jsref/obj_keyboardevent.asp
 
-> .
-> **This example may be removed with notice.**
-> .
+```
+
+ **This example may be removed with notice.**
+```
 
 ## Supported Voices
 
