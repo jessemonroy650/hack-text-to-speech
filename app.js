@@ -15,6 +15,7 @@ var app = {
     // clear the input field
     inputClear : function () {
         document.getElementById('theText').value = "";
+        app.inputFocus();
     },
     // set the input focus
     inputFocus : function () {
