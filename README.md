@@ -13,8 +13,7 @@ This example uses keyboard events to trap the input field.
 * https://www.w3schools.com/jsref/obj_keyboardevent.asp
 
 ```
-
- **This example may be removed with notice.**
+**This example may be removed with notice.**
 ```
 
 ## Supported Voices
