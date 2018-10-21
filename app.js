@@ -1,13 +1,20 @@
 var app = {
-    version : '0.9.0',
+    version : '1.0.0',
     targetEvent : 'click',
 
-    //
-    input2Speech : function () {
-
+    // https://www.w3schools.com/jsref/obj_keyboardevent.asp
+    input2Speech : function (event) {
+        var x = document.getElementById('theText').value;
+        //console.log("theText => ", x);
+        if (event.keyCode == 13) {
+            //console.log("theText => ", x);
+            document.getElementById('feedback').innerHTML = x;
+            txt2SpeechPlugin.talk(x);
+        }
     },
     //
     hook : function () {
+        //console.log("called hook() ");
         document.getElementById('exitApp').addEventListener(app.targetEvent,
             function () { navigator.app.exitApp(); },
             false);
@@ -15,9 +22,10 @@ var app = {
             function () { txt2SpeechPlugin.talk(2); },
             false);
         //
-        document.getElementById('formText').addEventListener('submit',
-            function () { txt2SpeechPlugin.talk(document.getElementById('theText').value);  },
+        document.getElementById('theText').addEventListener('keyup',
+            app.input2Speech,
             false);
+        //console.log("called hook() done ");
     },
     //
     onDOMContentLoaded : function () {

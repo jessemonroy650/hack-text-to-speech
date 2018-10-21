@@ -8,6 +8,10 @@ In addition, this example app uses `cordova-plugin-device`.
 
 * https://www.npmjs.com/package/cordova-plugin-device
 
+This example uses keyboard events to trap the input field.
+
+* https://www.w3schools.com/jsref/obj_keyboardevent.asp
+
 This example may be removed with notice.
 
 

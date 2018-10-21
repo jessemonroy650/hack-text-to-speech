@@ -1,5 +1,5 @@
 var txt2SpeechPlugin = {
-    version : '0.9.0',
+    version : '1.0.0',
 
     talk : function (theText) {
         //
